@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JS New Layout spec</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="images/favicon.png" rel="icon" type="images/png">
+
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:400,300" rel="stylesheet" type="text/css">
+
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/skins/tango/skin.css" />
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+
+<!--[if lt IE 9]-->
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<!--[endif]--> 
+
+</head>
+<body>
+	<!--wrapper-->
+	<div class="wrapper ">
+		<div class="container main_shadow">
+			<div class="page_full">
+
+				<!--header-->
+				<div class="header header_bg">
+					<div class="container">
+						<div class="page_full">
+							<div class="header_top">
+								<div class="first_line">
+									<div class="phone_block fleft">Call us: <span></span>+xxx xxxxxxx</div>
+									<div class="follow_us fright">
+										<ul class="follow_us2">
+											<li><a href="#" class="twitter">Twitter</a></li>
+											<li><a href="#" class="facebook">Facebook</a></li>
+											<li><a href="#" class="soc_icon">Icon</a></li>
+											<li><a href="#" class="soc_icon2">Icon</a></li>
+											<li><a href="#" class="soc_icon3">Icon</a></li>
+										</ul>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="span4">
+											<div class="logo"><a href="http://realestate.online-cr.com/index.php?type=%25&submit=submit"><span>Demo</span><br> Real Estate Spec</a></div>
+										</div>
+										<div class="span8">
+											<div id="top_menu">
+												<div class="fright">
+									<!--menu-->
+									<nav id="main_menu">
+									<div class="menu_wrap">
+										<ul class="nav sf-menu">
+										<li class="sub-menu"><a class="current" href="index.html">Home</a></li>
+										<li class="sub-menu"><a href="homes.html">Homes</a></li>
+										<li class="sub-menu"><a href="lots.html">Lots</a></li>
+										<li class="sub-menu"><a href="commercial.html">Commercial</a></li>
+										<li class="sub-menu"><a href="contacts.html">Contact Us</a></li>
+											</ul>
+											<div class="clear"></div>
+											</div>
+											</nav>                        
+									<!--//menu --> 
+												</div>
+												<div class="clear"></div>                       
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>                      
+							</div>
+						</div>
+					</div>
+				</div> 
+				<!--//header-->
+				 
+				<!--page_container-->
+				<div class="page_container">
+					<div class="container">
+						
+<div id="client_block">
+							<h2 class="title">Quick Search</h2>
+							<div class="clients">
+								<ul>
+									<li>
+			<a href="homesforsale.html"><img class="img-hover" src="images/clients/costa_rica_homes_for_sale.png" alt="" /><img class="client_img" src="images/clients/costa_rica_homes_for_sale_h.png" alt="" /></a>
+									</li>
+									
+                                    	<li>
+										<a href="homesforrent.html"><img class="img-hover" src="images/clients/costa_rica_homes_for_rent.png" alt="" /><img class="client_img" src="images/clients/costa_rica_homes_for_rent_h.png" alt="" /></a>
+									</li>
+                                    
+									<li>
+										<a href="lotsforsale.html"><img class="img-hover" src="images/clients/costa_rica_lots_for_sale.png" alt="" /><img class="client_img" src="images/clients/costa_rica_lots_for_sale_h.png" alt="" /></a>
+									</li>
+									
+                                    <li>
+										<a href="lotsforrent.html"><img class="img-hover" src="images/clients/costa_rica_lots_for_rent.png" alt="" /><img class="client_img" src="images/clients/costa_rica_lots_for_rent_h.png" alt="" /></a>
+									</li>
+                                    
+									<li>
+										<a href="commercialforsale.html"><img class="img-hover" src="images/clients/costa_rica_commercial_for_sale.png" alt="" /><img class="client_img" src="images/clients/costa_rica_commercial_for_sale_h.png" alt="" /></a>
+									</li>
+                                    
+									<li class="last_client">
+										<a href="commercialforrent.html"><img class="img-hover" src="images/clients/costa_rica_commercial_for_rent.png" alt="" /><img class="client_img" src="images/clients/costa_rica_commercial_for_rent_h.png" alt="" /></a>
+									</li>
+									
+								</ul>
+								<div class="clear"></div>
+							</div>							
+					  </div>
+
+						<!--Welcome block-->
+						<div class="welcome_block">
+							<p>Your real estate choice.</p>
+							Rental or Vacation Rentals & Residental & Commercial Lots
+						</div>
+						<!--//Welcome block-->
+                        
+					<!--Latest Properties-->
+                    <!--//Gets all latest listings from all tables posted in the database in the last month, reccomend using an if statement that only shows listings with a datestamp in the current month, which would be updated automatically on the 15th of each month to change to the next month-->
+                    <!--//The division that must be repeated for each listing starts from the <div class=scroller__item"> down to its closing division-->
+                    <!--//Order of listings in this block are randomized each time the page is reloaded-->
+					<!--//alt statements are picked up by the title variable for each image-->
+						
+						<div class="row">
+							<div class="span8">
+								<div class="prop_block prop_block_exmpl2">
+									<h2 class="title">Latest Properties</h2>
+									<div class="scroller">
+										<div class="scroller-content">
+											<div class="scroller__item">
+												<div class="hover_img">
+													<img src="images/properties/1_exmpl2.jpg" alt="" /><!--Get image 1 from database according to property ID-->
+													<div class="zoom"><a href="images/properties/1_exmpl2.jpg" rel="prettyPhoto[portfolio1]"></a></div><!--Get image 1 from database according to property ID-->
+													<div class="link"><a href="#">View item</a></div><!--Get link to the detailed version of this listing according to ID-->
+												</div>
+												<div class="recent_text">
+													<p>Property Name</p> <!--Get property name from database according to Property ID-->
+													<ul>
+														<li><span class="recent_in_left">Bedrooms:</span><span class="recent_in_right">#</span><!--Get ammount of beds from database according to property ID--><div class="clear"></div></li>
+														<li><span class="recent_in_left">Baths:</span><span class="recent_in_right">#</span><!--Get ammount of baths from database according to property ID--><div class="clear"></div></li>
+														<li><span class="recent_in_left">House Size:</span><span class="recent_in_right">#sq/m</span><!--Get house size from database according to property ID--><div class="clear"></div></li>
+														<li class="last"><span class="recent_in_left">Lot Size:</span><span class="recent_in_right">#sq/m</span><!--Get lot size from database according to property ID--><div class="clear"></div></li>
+													</ul>
+													<span class="recent_price fleft">$#</span><!--Get price from database according to property ID-->
+													<a href="#" class="fright">View Details &rarr;</a><!--Get link to the detailed version of this listing according to ID-->
+													<div class="clear"></div>
+												</div>
+											</div>
+											
+											
+											
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+								<!--//Latest Properties-->
+
+
+							<!--Latest Lots-->
+							<!--//Gets all latest listings from the lots table posted in the database in the last month, reccomend using an if statement that only shows listings with a datestamp in the current month, which would be updated automatically on the 15th of each month to change to the next month-->
+                    		<!--//The division that must be repeated for each listing starts from the <div class=scroller__item"> down to its closing division-->
+                    		<!--//Order of listings in this block are randomized each time the page is reloaded-->
+							<!--//alt statements are picked up by the title variable for each image-->
+								<div class="prop_block blog_item blog_item_exmpl3">
+									<h2 class="title">Latest Lots</h2>
+									<div class="scroller">
+										<div class="scroller-content">
+											<div class="scroller__item">
+												<img src="images/blog/1_small_exmpl3.jpg" alt="#" /><!--Get image 1 from database according to lot ID-->
+												<div class="blog_txt">
+													<a href="#" class="title">Lot Name</a><!--Get lot name from database according to Property ID-->
+													<ul>
+														<li class="date_blog">Lot Type</li><!--Get lot type from database according to Property ID-->
+														<li class="comm_blog"><a href="#"> City, Province/state</a></li><!--Get lot City and Province from database according to Property ID-->
+														<div class="clear"></div>
+													</ul>
+													<p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT <a href="#">[&rarr;]</a></p><!--Get lot short description from database according to Property ID-->
+												    <!--This must be limited to 350 characters shown from the short description-->
+													<div class="clear"></div>
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+								<!--//Latest Lots-->
+							</div>
+						
+
+							<div class="span4 sidebar">
+								<!--Search Form-->
+                                <!--This search refinement filters the latest properties section-->
+								<form name="tourquiry" method="get" ><select name="type" size="4" >
+  <option value="%" selected="selected">Select a Property Type</option>
+  <option value="Home sales">Home to buy</option>
+  <option value="Home Rentals">Home to Rent</option>
+  <option value="Vacation Rentals">Vacation Rentals</option>  
+  <option value="other">Other Type Home</option>
+  <option value="discounted">Discounted Homes</option>
+  <option value="popular">Popular Homes</option>
+   </select>
+ 
+ <select name="city" size="4" >
+  <option value="%" selected="selected">Select a City</option>
+  <option value="Alajuela">Alajuela</option>
+  <option value="Atenas">Atenas</option>
+  <option value="Bagaces">Bagaces</option>
+  <option value="Bahia Salinas">Bahia Salinas</option>
+  <option value="Belen">Belen</option>
+  <option value="Brasilito">Brasilito</option>
+  <option value="Canas">Canas</option>
+  <option value="Cariari">Cariari</option>
+  <option value="Carrillo">Carrillo</option>
+  <option value="Cartago">Cartago</option>
+  <option value="Conchal">Conchal</option>
+  <option value="Coronado">Coronado</option>
+  <option value="Desamparados">Desamparados</option>
+  <option value="El Llano">El Llano</option>
+  <option value="Escazu">Escazu</option>
+  <option value="Flamingo">Flamingo</option>
+  <option value="Golfito">Golfito</option>
+  <option value="Guadalupe">Guadalupe</option>
+  <option value="Guardia">Guardia</option>
+  <option value="Heredia">Heredia</option>
+  <option value="Huacas">Huacas</option>
+  <option value="Jaco">Jaco</option>
+  <option value="Jicaral">Jicaral</option>
+  <option value="La Fortuna">La Fortuna</option>
+  <option value="Lake Arenal">Lake Arenal</option>
+  <option value="Lajas de Matapalo">Lajas de Matapalo</option>
+  <option value="Liberia">Liberia</option>
+  <option value="Manuel Antonio">Manuel Antonio</option>
+  <option value="Matapalo">Matapalo</option>
+  <option value="Monteverde">Monteverde</option>
+  <option value="Moravia">Moravia</option>
+  <option value="Nicoya">Nicoya</option>
+  <option value="Nosara">Nosara</option>
+  <option value="Papagayo">Papagayo</option>
+  <option value="Paquer">Paquera</option>
+  <option value="Pinilla">Pinilla</option>
+  <option value="Playa Coco">Playa Coco</option>
+  <option value="Playa Grande">Playa Grande</option>
+  <option value="Playa Hermosa">Playa Hermosa</option>
+  <option value="Playa Negra">Playa Negra</option>
+  <option value="Playa Panama">Playa PanamaPlaya Samara</option>
+  <option value="Playa Samara">Playa Samara</option>
+  <option value="Playa Santa Teresa">Playa Santa Teresa</option>
+  <option value="Portagolpe">Portagolpe</option>
+  <option value="Potrero">Potrero</option>
+  <option value="Quepos">Quepos</option>
+  <option value="Rhormoser">Rhormoser</option>
+  <option value="Samara">Samara</option>
+  <option value="San Francisco">San Francisco</option>
+  <option value="San Isidro">San Isidro</option>
+  <option value="San Jose">San Jose</option>
+  <option value="San Pedro">San Pedro</option>
+  <option value="Santa Ana">Santa Ana</option>
+  <option value="Santa Barbara">Santa Barbara</option>
+  <option value="Santa Cruz">Santa Cruz</option>
+  <option value="Surfside">Surfside</option>
+  <option value="Tamarindo">Tamarindo</option>
+  <option value="Tempate">Tempate</option>
+  <option value="Tibas">Tibas</option>
+  <option value="Tilaran">Tilaran</option>
+  <option value="Tres Rios">Tres Rios</option>
+  <option value="Villareal">Villareal</option>
+  <option value="Volcan Poas">Volcan Poas</option>
+  <option value="Other">Other</option>
+ </select>
+ 
+ <select name="province" size="4" form="selectterms" title="Optional Provinces Select"> 
+         
+        <option value="%" selected>All Provinces</option>
+          <option value="alajuela">Alajuela</option>
+          <option value="cartago">Cartago</option>
+          <option value="Guanacaste">Guanacaste</option>
+          <option value="heredia">Heredia</option>
+          <option value="Limon">Limon</option>
+          <option value="Puntarenas">Puntarenas</option>
+          <option value="San Jose">San Jose</option>
+          <option value="Other">Other</option>
+      </select><br><br>
+             
+
+<input name="submit" type="submit" id="type" formmethod="GET" value="Search" title="Select a Commercial Type, Press submit for  Details">
+</form>
+								
+								
+								
+								
+							</div>
+							<!--//Search Form-->
+							<div class="clear"></div>
+						</div>
+						
+						<div class="row">
+							
+							
+							<div class="clear"></div>
+						</div>
+						
+						<!-- Ignore this for now -->
+						<h2 class="title">Reserved</h2>
+					  <div class="servc_block servc_example3">
+
+							<a href="#" class="span3 service">
+								<div class="icon_block">
+									
+									<img class="icon_bg" src="images/icon_bg_exm2.png" alt="" />
+									<img class="icon_bg_h" src="images/icon_bg_h_exm2.png" alt="" />
+								</div>
+								<p>Reserved</p>
+								Reserved Description. 
+							</a>
+							<a href="http://www.tamarindotoursdiscovery.com/" class="span3 service">
+								<div class="icon_block">
+									
+									<img class="icon_bg" src="images/icon_bg_exm2.png" alt="" />
+									<img class="icon_bg_h" src="images/icon_bg_h_exm2.png" alt="" />
+								</div>
+								<p>Reserved</p>
+								Reserved Description.
+							</a>
+							<a href="" class="span3 service">
+								<div class="icon_block">
+									
+									<img class="icon_bg" src="images/icon_bg_exm2.png" alt="" />
+									<img class="icon_bg_h" src="images/icon_bg_h_exm2.png" alt="" />
+								</div>
+								<p>Reserved</p>
+								Reserved Description.
+							</a>
+							<a href="" class="span3 service last_service">
+								<div class="icon_block">
+									
+									<img class="icon_bg" src="images/icon_bg_exm2.png" alt="" />
+									<img class="icon_bg_h" src="images/icon_bg_h_exm2.png" alt="" />
+								</div>
+								<p>Reserved</p>
+								Reserved Description.
+							</a>
+
+							<div class="clear"></div>
+						</div>
+						<!-- quick search -->
+						<div id="client_block1">
+						  <h2 class="title">Quick Search</h2>
+							<div class="clients">
+								<ul>
+									<li>
+			<a href="homesforsale.html"><img class="img-hover" src="images/clients/costa_rica_homes_for_sale.png" alt="" /><img class="client_img" src="images/clients/costa_rica_homes_for_sale_h.png" alt="" /></a>
+									</li>
+									
+                                    	<li>
+										<a href="homesforrent.html"><img class="img-hover" src="images/clients/costa_rica_homes_for_rent.png" alt="" /><img class="client_img" src="images/clients/costa_rica_homes_for_rent_h.png" alt="" /></a>
+									</li>
+                                    
+									<li>
+										<a href="lotsforsale.html"><img class="img-hover" src="images/clients/costa_rica_lots_for_sale.png" alt="" /><img class="client_img" src="images/clients/costa_rica_lots_for_sale_h.png" alt="" /></a>
+									</li>
+									
+                                    <li>
+										<a href="lotsforrent.html"><img class="img-hover" src="images/clients/costa_rica_lots_for_rent.png" alt="" /><img class="client_img" src="images/clients/costa_rica_lots_for_rent_h.png" alt="" /></a>
+									</li>
+                                    
+									<li>
+										<a href="commercialforsale.html"><img class="img-hover" src="images/clients/costa_rica_commercial_for_sale.png" alt="" /><img class="client_img" src="images/clients/costa_rica_commercial_for_sale_h.png" alt="" /></a>
+									</li>
+                                    
+									<li class="last_client">
+										<a href="commercialforrent.html"><img class="img-hover" src="images/clients/costa_rica_commercial_for_rent.png" alt="" /><img class="client_img" src="images/clients/costa_rica_commercial_for_rent_h.png" alt="" /></a>
+									</li>
+									
+								</ul>
+								<div class="clear"></div>
+							</div>							
+						</div>
+						<div class="clear"></div>
+						<!-- end quick search -->
+							
+					</div>    
+				</div>
+				<!--//page_container-->
+			</div>
+
+			<!--footer-->
+			<div id="footer">
+				<div class="row">
+					<div class="span3">
+						<a class="foot_logo" href="#"><span>Oso Viejo</span><br> Real Estate Demo</a>
+						<p>Mozart layout demo developed by James Wesley Productions & Oso Viejo S.A</p>
+					</div>
+					<div class="span3">
+						<h2 class="title">Popaular Searches</h2>
+						<div class="tags">
+							<a href="www.realestate.online-cr.com" alt="">Homes</a>
+							<a href="www.realestate.online-cr.com" alt="">Lots</a>
+							<a href="www.realestate.online-cr.com" alt="">Costa Rica</a>
+							<a href="www.realestate.online-cr.com" alt="">Cheap Property</a>
+							<a href="www.realestate.online-cr.com" alt="">Commercial</a>
+							<a href="www.realestate.online-cr.com" alt="">Commercial for Sale</a>
+							<a href="www.realestate.online-cr.com" alt="">Homes for rent</a>
+							<a href="www.realestate.online-cr.com" alt="">Rent</a>
+							<a href="www.realestate.online-cr.com" alt="">Lease</a>
+							<a href="www.realestate.online-cr.com" alt="">Buy Land</a>
+							<a href="www.realestate.online-cr.com" alt="">Investment</a>
+							<a href="www.realestate.online-cr.com" alt="">Guanacaste</a>
+							<a href="www.realestate.online-cr.com">Huacas</a>
+						</div>
+					</div>
+					
+					<div class="span3">
+						<h2 class="title"><span>Get in Touch</span></h2>							
+						<div class="contact_form">
+							<div id="note"></div>
+							<div id="fields">
+								<form id="ajax-contact-form" action="">
+									<input type="text" name="name" value="Name" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+									<input type="text" name="email" value="Email" onFocus="if (this.value == 'Email') this.value = '';" onBlur="if (this.value == '') this.value = 'Email';" />
+									<textarea name="message" id="message" onFocus="if (this.value == 'Message...') this.value = '';" onBlur="if (this.value == '') this.value = 'Message...';" >Message...</textarea>
+									<div class="clear"></div>
+									<input type="submit" class="send_btn contact_form_btn" value="Send" />
+									<div class="clear"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="footer_bottom">
+					<div class="container footer_bg">
+						<div class="row">
+							<div class="span4"><div class="copyright">James Wesley Productions / Oso Viejo S.A &copy; 2016  |  Revision 01 - 11 Aug, 2016 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#"> Privacy Policy</a></div></div>
+							<div class="span8 foot_menu">
+								<ul>
+									<li><a class="current" href="index.html">Home</a></li>
+									<li><a href="homesindex.html">Homes</a></li>
+									<li><a href="lotsindex.html">Lots</a></li>
+									<li><a href="commercialindex.html">Commercial</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="contacts.html">Contacts</a></li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<!--//footer-->
+		</div>
+	</div>
+    <!--//wrapper-->
+
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/scroll/jquery.mousewheel-3.0.4.js"></script>
+	<script type="text/javascript" src="js/scroll/hScroller.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    <script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+	
+    <script type="text/javascript">
+		$(document).ready(function(){			
+			//Search Form
+			$(document).ready(function() {
+				enableSelectBoxes();
+			});
+			
+			function enableSelectBoxes(){
+				$('div.selectBox').each(function(){
+					$(this).children('span.selected').html($(this).children('div.selectOptions').children('span.selectOption:first').html());
+					$(this).attr('value',$(this).children('div.selectOptions').children('span.selectOption:first').attr('value'));
+					
+					$(this).children('span.selected,span.selectArrow').click(function(){
+						if($(this).parent().children('div.selectOptions').css('display') == 'none'){
+							$(this).parent().children('div.selectOptions').css('display','block');
+						}
+						else
+						{
+							$(this).parent().children('div.selectOptions').css('display','none');
+						}
+					});
+					
+					$(this).find('span.selectOption').click(function(){
+						$(this).parent().css('display','none');
+						$(this).closest('div.selectBox').attr('value',$(this).attr('value'));
+						$(this).parent().siblings('span.selected').html($(this).html());
+					});
+				});				
+			}
+			
+			//Carousel with Scroll
+			hScroller({
+				slider: jQuery(".scroller").get(0),
+				content: jQuery(".scroller-content").get(0),
+				startItem: 0
+			});
+			
+			hScroller({
+				slider: jQuery(".scroller").get(1),
+				content: jQuery(".scroller-content").get(1),
+				startItem: 1
+			});
+			
+			//Contact Form
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+			
+		});
+	</script>	
+</body>
+</html>
+
